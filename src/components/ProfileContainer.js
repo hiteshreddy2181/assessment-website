@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProfileContainer.css";
+import "./css/ProfileContainer.css";
 
 function ProfileContainer() {
     return (
@@ -42,7 +42,7 @@ function ProfileContainer() {
             </div>
             <div className="profile-details">
                 <div className="profile-icon">
-                    <img src="./images/default-profile.png"/>
+                    <img src="./images/default-profile.png" alt=""/>
                 </div>
             </div>
         </div>

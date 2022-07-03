@@ -1,0 +1,137 @@
+.create-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 94%;
+    overflow-y: auto;
+    padding: 0 10% 0 10%;
+}
+
+.create-title {
+    margin: 0;
+    padding: 2% 0 2% 0;
+}
+
+.create-container hr {
+    width: 100%;
+    margin: 0;
+    background-color: #BBBBBB;
+}
+
+.create-buttons {
+    width: 80%;
+    height: 6%;
+    padding: 1% 10% 1% 10%;
+}
+
+.create-button {
+    width: fit-content;
+    height: 100%;
+    padding: 0 4% 0 4%;
+    background-color: rgb(84,16,16);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.create-button:hover {
+    filter: brightness(1.2);
+}
+
+.create-questions {
+    width: 80%;
+    padding: 0 10% 0 10%;
+    min-height: 500px;
+}
+
+.create-question-form {
+    width: 100%;
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0 1% 0;
+}
+
+.create-create-question {
+    width: 90%;
+    padding: 0 5% 0 5%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #2B2B2B;
+    transition: 300ms;
+}
+
+.create-create-question:hover {
+    filter: brightness(1.2);
+}
+
+.create-expand {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.create-delete-button {
+    height: 50%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px #BBBBBB solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+
+.create-delete-button:hover {
+    transform: scale(1.2);
+}
+
+.create-form {
+    width: 90%;
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-label {
+    margin: 1% 0 1% 0;
+}
+
+.create-textarea {
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+    background-color: #666666;
+    outline: none;
+    resize: none;
+    height: fit-content;
+    color: #EEEEEE;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
+
+.create-save-button {
+    width: 15%;
+    aspect-ratio: 3;
+    background-color: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 2% 1% 2% 1%;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.create-save-button:hover {
+    filter: brightness(1.2);
+}

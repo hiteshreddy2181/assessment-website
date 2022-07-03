@@ -1,17 +1,18 @@
 .section {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
-    border-radius: 20px;
-    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    background-color: #2B2B2B;
 }
 
 .section-title {
     padding: 5px;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .section-break {
-    border-top: 1px solid black;
+    border-top: 1px solid #666666;
     border-bottom: 0px;
     align-self: center;
 }
@@ -19,4 +20,5 @@
 .section-content {
     padding: 5px;
     line-height: 2rem;
+    font-size: 16px;
 }

@@ -39,7 +39,7 @@
     border: none;
     border-radius: 10px;
     background-color: #222222;
-    color: #dddddd;
+    color: #EEEEEE;
     transition: 300ms;
     font-size: 1em;
 }
@@ -51,7 +51,7 @@
 
 .login-container input[type=button] {
     background-color: #222222;
-    color: #dddddd;
+    color: #EEEEEE;
     width: 30%;
     height: 10%;
     cursor: pointer;

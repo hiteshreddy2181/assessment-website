@@ -1,10 +1,10 @@
 import React from "react";
-import "./Banner.css"
+import "./css/Banner.css"
 
 function Banner() {
     return (
         <div className='banner'>
-            <img src="images/logo.png"/>
+            <img src="images/logo.png" alt=""/>
         </div>
     );
 }

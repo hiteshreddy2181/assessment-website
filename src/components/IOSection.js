@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuestionSection.css';
+import './css/QuestionSection.css';
 
 function IOSection({input, output, explanation}) {
     return (

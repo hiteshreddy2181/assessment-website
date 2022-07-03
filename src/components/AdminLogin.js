@@ -31,13 +31,13 @@ import "./pages/LandingPage";
 import "../components/pages/Home";
 import { Link } from "react-router-dom";
 
-function LoginSection() {
+function AdminLogin() {
     return ( <
         div className = "login-main" >
         <
         div className = "login-container" >
         <
-        h2 > Login < /h2> <
+        h2 > Admin Login < /h2> <
         hr / >
         <
         input type = "text"
@@ -50,13 +50,13 @@ function LoginSection() {
         <
         button > submit < /button> <
         /Link> <
-        Link to = "/adminlanding" >
+        Link to = "/Landingpage" >
         <
-        button > Login as Admin < /button> <
+        button > Login as Student < /button> <
         /Link> <
         /div> <
         /div>
     );
 }
 
-export default LoginSection;
+export default AdminLogin;

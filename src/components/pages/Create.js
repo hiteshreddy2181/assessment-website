@@ -22,17 +22,8 @@ export default function Create() {
         setOpenQuestions([...openQuestions.slice(0, id), openQuestions[id] === "closed" ? "opened" : "closed", ...openQuestions.slice(id + 1, openQuestions.length)]);
     }
 
-    function updateQuestion(id, section, content) {
-        content = content.replace(/<div>/g,"\n").replace(/<\/div>/g,"").replace(/<br>/g,"");
-        console.log(id, section,content);
-        if(section === 'title') setQuestions([...questions.slice(0, id), {...questions[id], title: content}, ...questions.slice(id + 1, questions.length)]);
-        else if(section === 'statement') setQuestions([...questions.slice(0, id), {...questions[id], statement: content}, ...questions.slice(id + 1, questions.length)]);
-        else if(section === 'example') setQuestions([...questions.slice(0, id), {...questions[id], example: content}, ...questions.slice(id + 1, questions.length)]);
-        else if(section === 'description') setQuestions([...questions.slice(0, id), {...questions[id], description: content}, ...questions.slice(id + 1, questions.length)]);
-        else if(section === 'constraints') setQuestions([...questions.slice(0, id), {...questions[id], constraints: content}, ...questions.slice(id + 1, questions.length)]);
-        else if(section === 'input') setQuestions([...questions.slice(0, id), {...questions[id], input: content}, ...questions.slice(id + 1, questions.length)]);
-        else if(section === 'output') setQuestions([...questions.slice(0, id), {...questions[id], output: content}, ...questions.slice(id + 1, questions.length)]);
-        else if(section === 'explanation') setQuestions([...questions.slice(0, id), {...questions[id], explanation: content}, ...questions.slice(id + 1, questions.length)]);
+    function updateQuestion(id) {
+        
     }
 
     function questionForm(id) {
@@ -40,21 +31,22 @@ export default function Create() {
             <>
                 <div className='create-form'>
                     <label className='create-label'>Title</label>
-                    <div className='create-textarea' contentEditable='true' id={id} onKeyUp={e => updateQuestion(parseInt(e.target.id), 'title', e.target.innerHTML)}>{questions[id].title}</div>
+                    <div className='create-textarea' contentEditable='true'></div>
                     <label className='create-label'>Problem Statement</label>
-                    <div className='create-textarea' contentEditable='true' id={id} onKeyUp={e => updateQuestion(parseInt(e.target.id), 'statement', e.target.innerHTML)}>{questions[id].statement}</div>
+                    <div className='create-textarea' contentEditable='true'></div>
                     <label className='create-label'>Example</label>
-                    <div className='create-textarea' contentEditable='true' id={id} onKeyUp={e => updateQuestion(parseInt(e.target.id), 'example', e.target.innerHTML)}>{questions[id].example}</div>
+                    <div className='create-textarea' contentEditable='true'></div>
                     <label className='create-label'>Description</label>
-                    <div className='create-textarea' contentEditable='true' id={id} onKeyUp={e => updateQuestion(parseInt(e.target.id), 'description', e.target.innerHTML)}>{questions[id].description}</div>
+                    <div className='create-textarea' contentEditable='true'></div>
                     <label className='create-label'>Constraints</label>
-                    <div className='create-textarea' contentEditable='true' id={id} onKeyUp={e => updateQuestion(parseInt(e.target.id), 'constraints', e.target.innerHTML)}>{questions[id].constraints}</div>
+                    <div className='create-textarea' contentEditable='true'></div>
                     <label className='create-label'>Input</label>
-                    <div className='create-textarea' contentEditable='true' id={id} onKeyUp={e => updateQuestion(parseInt(e.target.id), 'input', e.target.innerHTML)}>{questions[id].input}</div>
+                    <div className='create-textarea' contentEditable='true'></div>
                     <label className='create-label'>Output</label>
-                    <div className='create-textarea' contentEditable='true' id={id} onKeyUp={e => updateQuestion(parseInt(e.target.id), 'output', e.target.innerHTML)}>{questions[id].output}</div>
+                    <div className='create-textarea' contentEditable='true'></div>
                     <label className='create-label'>Explanation</label>
-                    <div className='create-textarea' contentEditable='true' id={id} onKeyUp={e => updateQuestion(parseInt(e.target.id), 'explanation', e.target.innerHTML)}>{questions[id].explanation}</div>
+                    <div className='create-textarea' contentEditable='true'></div>
+                    <div id={id} className='create-save-button' onClick={e => updateQuestion(parseInt(e.target.id))}>Save</div>
                 </div>
             </>
         )
@@ -70,8 +62,6 @@ export default function Create() {
                 <div className='create-button' onClick={createQuestion}>
                     + Add a Question
                 </div>
-                <div className='create-filler'></div>
-                <div className='create-submit-button'>Submit</div>
             </div>
             <div className='create-questions'>
                 {
